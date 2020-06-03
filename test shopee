@@ -25,9 +25,11 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Object Repository/Page_Discover gists  GitHub/a_Signin'))
 
-WebUI.setText(findTestObject('Page_Sign in to GitHub  GitHub/input_Username or email address_login'), 'handychriastian@gmail.com')
+//input email address login
+WebUI.setText(findTestObject('Page_Sign in to GitHub  GitHub/input_Username or email address_login'), '')
 
-WebUI.setEncryptedText(findTestObject('Page_Sign in to GitHub  GitHub/input_Forgot password_password'), 'FDcrop6j4JAFMexipEEBMw==')
+//input password login
+WebUI.setEncryptedText(findTestObject('Page_Sign in to GitHub  GitHub/input_Forgot password_password'), '')
 
 WebUI.click(findTestObject('Page_Sign in to GitHub  GitHub/input_Forgot password_commit'))
 
