@@ -1,0 +1,60 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://gist.github.com/discover')
+
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('Object Repository/Page_Discover gists  GitHub/a_Signin'))
+
+WebUI.setText(findTestObject('Page_Sign in to GitHub  GitHub/input_Username or email address_login'), 'handychriastian@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Page_Sign in to GitHub  GitHub/input_Forgot password_password'), 'FDcrop6j4JAFMexipEEBMw==')
+
+WebUI.click(findTestObject('Page_Sign in to GitHub  GitHub/input_Forgot password_commit'))
+
+WebUI.click(findTestObject('Object Repository/Page_Discover gists/svg_Back to GitHub_octicon octicon-plus'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Create a new Gist/input_See all of your gists_gistdescription'), 'test shopee')
+
+WebUI.click(findTestObject('Object Repository/Page_Create a new Gist/pre_'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Create a new Gist/div_1as a user i want create gist'), '<div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation" style=""><span role="presentation" style="padding-right: 0.1px;">as a user, i want create gist </span></pre></div>')
+
+WebUI.click(findTestObject('Object Repository/Page_Create a new Gist/button_Create public gist'))
+
+WebUI.click(findTestObject('Object Repository/Page_test shopee/a_Edit'))
+
+WebUI.click(findTestObject('Object Repository/Page_Editing gistc1404cedf169f39f5ad6d381267495c1/pre_as a user i want create gist'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Editing gistc1404cedf169f39f5ad6d381267495c1/div_1as a user i want create gist 2this is _702197'), 
+    '<div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation" style=""><span role="presentation" style="padding-right: 0.1px;">as a user, i want create gist </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation" style=""><span role="presentation" style="padding-right: 0.1px;">this is edit gist</span></pre></div>')
+
+WebUI.click(findTestObject('Object Repository/Page_Editing gistc1404cedf169f39f5ad6d381267495c1/button_Update public gist'))
+
+WebUI.click(findTestObject('Object Repository/Page_test shopee/a_Edit'))
+
+WebUI.click(findTestObject('Object Repository/Page_Editing gistc1404cedf169f39f5ad6d381267495c1/svg_Delete_octicon octicon-trashcan'))
+
+WebUI.click(findTestObject('Object Repository/Page_hchriastians gists/strong_create gist'))
+
+WebUI.click(findTestObject('Object Repository/Page_create gist/a_hchriastian'))
+
